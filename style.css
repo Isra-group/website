@@ -166,7 +166,7 @@ position: relative;
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:600px){
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -183,7 +183,7 @@ position: relative;
       background-color: rgba(0, 0, 0, 0.3);
     }
     .nav > .nav-btn > label > span {
-      display: block;
+      display:block;
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
@@ -211,3 +211,115 @@ position: relative;
       overflow-y: auto;
     }
   }
+  h1   {
+    color:rebeccapurple;
+  font-family:'Courier New', Courier, monospace;
+  margin: 10px;
+  }
+  img{
+    border: 2px solid rgb(8, 58, 65);
+    border-radius: 8 cm;
+    width: 100%;
+  }
+  ins{
+    color:rgb(112, 21, 21);
+    font-style:italic;
+    font-size:large;
+  }
+    
+ 
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .product{
+        width: 23.9%;
+        display :inline-block;
+        border-radius: 10px;
+        margin: 55px;
+        align-items: center;
+      background-color: rgba(145, 158, 28, 0.76);
+      justify-items: center;
+       
+      }
+      .product:hover{
+        box-shadow:2px 2px 20px black ;
+      }
+       .imgbox{
+        width: 100%;
+       }
+      .details{
+        text-align: center;
+        color: black;
+        margin: 10px;
+      }
+      button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: aliceblue;
+        border: 1px solide black;
+        padding: 5px;
+        border-radius: 5px;
+        cursor:pointer;
+      }
+      .des{
+        text-align: center;
+      }
+      button:hover{
+        background-color: brown;
+        color: white;
+      }
+      h1   {
+        color:rebeccapurple;
+      font-family:'Courier New', Courier, monospace;
+      margin: 10px;
+      }
+      img{
+        border: 2px solid rgb(8, 58, 65);
+        border-radius: 8 cm;
+        width: 100%;
+      }
+      ins{
+        color:rgb(112, 21, 21);
+        font-style:italic;
+        font-size:large;
+      }
+        
+        .product{
+            width: 23.9%;
+            display :inline-block;
+            border-radius: 10px;
+            margin: 55px;
+            align-items: center;
+          background-color: rgba(145, 158, 28, 0.76);
+          justify-items: center;
+           
+          }
+          .product:hover{
+            box-shadow:2px 2px 20px black ;
+          }
+           .imgbox{
+            width: 100%;
+           }
+          .details{
+            text-align: center;
+            color: black;
+            margin: 10px;
+          }
+          button{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: aliceblue;
+            border: 1px solide black;
+            padding: 5px;
+            border-radius: 5px;
+            cursor:pointer;
+          }
+          .des{
+            text-align: center;
+          }
+          button:hover{
+            background-color: brown;
+            color: white;
+          }
+        
