@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.headerWrapeer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.menuWrapper ul{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.menuWrapper ul li{
+    display: inline-block;
+    padding: 3px;
+}
+
+.menuWrapper ul li a{
+    text-decoration: none;
+    color: rgb(61, 53, 41);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+.menuWrapper ul li a:hover{
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.menuWrapper ul li.active a{
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.title{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: azure;
+    font-size: 70px;
+}
+
+.button{
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid rgba(114, 24, 24, 0.226);
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: rgb(196, 140, 68);
+    transition: 0.5s ease-in;
+    font-size: 20px;
+    text-decoration: none;
+
+    background-color: rgb(236, 197, 148);
+    color: brown;
+}
+
+.btn:hover{
+    background-color: rgb(199, 163, 119);
+
+}
+
+.sub-menu{
+display: none;
+top: 6%;
+position: relative;
+}
+
+.sub-menu ul{
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    background-color: rgba(114, 24, 24, 0.226);
+}
+.sub-menu ul li a {
+    padding: 5px 0;
+    width: 98%!important;
+    display: block;
+    transition: 0.5s ease-in;
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: 100%;
+    background: rgb(236, 167, 167);
+    transition: 0.4s ease-in;
+    text-align: center;
+    padding: 0;
+}
+.sub-menu ul li a {
+    padding: 5px 0!important;
+    width: 98%!important;
+    display: block;
+    transition: 0.5s ease-in;
+}
+.heroSection{
+    background-image: url(img/bg-image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+    padding-left: 3rem;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding-right: 3rem;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 23px 13px 23px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
